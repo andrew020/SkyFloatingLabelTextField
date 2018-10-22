@@ -206,11 +206,12 @@ open class SkyFloatingLabelTextField: UITextField { // swiftlint:disable:this ty
      The default implementation converts the text to uppercase.
      */
     open var titleFormatter: ((String) -> String) = { (text: String) -> String in
-        if #available(iOS 9.0, *) {
-            return text.localizedUppercase
-        } else {
-            return text.uppercased()
-        }
+        return text;
+//        if #available(iOS 9.0, *) {
+//            return text.localizedUppercase
+//        } else {
+//            return text.uppercased()
+//        }
     }
     
     /**
